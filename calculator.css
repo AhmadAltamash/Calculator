@@ -37,6 +37,7 @@ html,body{
     margin-bottom: 10px;
 }
 .button {
+    overflow: hidden;
     width: 60px;
     height: 60px;
     margin: 8px;
@@ -50,8 +51,6 @@ html,body{
 }
     /* transition: background-color 0.3s ease;*/
 .button:hover{
-
-    overflow: hidden;
     width: 56px;
     height: 56px;
     font-size: 22px;
@@ -63,7 +62,10 @@ html,body{
     border-radius: 50%;
     transition: 0.4s ease-in;
 }
-
+#Allclear,#clear,#percent,#divide,#multiple,#Add,#substract,#equals
+{
+    background-color: grey;
+}
 #equals
 {
     background-color: #cf5f30
