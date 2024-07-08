@@ -58,3 +58,17 @@ document.addEventListener('keydown', (event) => {
         clearAll();
     }
 });
+
+
+var dark = document.querySelector("#mode");
+dark.addEventListener("click", function() {
+
+    if(dark.checked)
+    {
+        document.body.style.backgroundColor = "black";
+    }
+    else
+    {
+        document.body.style.backgroundColor = "white";
+    }
+})
