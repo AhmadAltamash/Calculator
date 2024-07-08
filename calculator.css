@@ -113,7 +113,7 @@ html,body{
         scale: 0.6;
 }
 #screen {
-
+        padding: 0px 0px 0px 20px;
         height: 100px;
         width: 100%;
         border-radius: 10px;
