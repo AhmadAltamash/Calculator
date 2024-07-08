@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet">
     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
+    <label class="ui-switch">
+        <input type="checkbox" id="mode">
+        <div class="slider">
+          <div class="circle"></div>
+        </div>
+      </label>
+      
     <div class="container">
         <div class="screen">
             <input type="text" id="screen">
@@ -14,24 +24,33 @@
         <div class="buttons">
             <button class="button" id="Allclear" onclick="clearAll()">AC</button>
             <button class="button" id="percent" onclick="percent()">%</button>
-            <button class="button" id="clear" onclick="clearEntry()">C</button>
+            <button class="button" id="clear" onclick="clearEntry()"><i class="ri-delete-back-2-fill"></i></button>
             <button class="button" id="divide" onclick="appendOperator('/')">/</button>
+        </div>
+        <div class="buttons">  
             <button class="button" onclick="appendNumber('7')">7</button>
             <button class="button" onclick="appendNumber('8')">8</button>
             <button class="button" onclick="appendNumber('9')">9</button>
             <button class="button" id="multiple" onclick="appendOperator('*')">x</button>
+        </div>
+        <div class="buttons">  
             <button class="button" onclick="appendNumber('4')">4</button>
             <button class="button" onclick="appendNumber('5')">5</button>
             <button class="button" onclick="appendNumber('6')">6</button>
             <button class="button" id="substract" onclick="appendOperator('-')">—</button>
+        </div>
+        <div class="buttons"> 
             <button class="button" onclick="appendNumber('1')">1</button>
             <button class="button" onclick="appendNumber('2')">2</button>
             <button class="button" onclick="appendNumber('3')">3</button>
             <button class="button" id="Add" onclick="appendOperator('+')">+</button>
+        </div>
+        <div class="buttons"> 
             <button class="button" onclick="appendNumber('00')">00</button>
             <button class="button" onclick="appendNumber('0')">0</button>
             <button class="button" onclick="appendNumber('.')">.</button>
             <button class="button" id="equals" onclick="calculate()">=</button>
+        </div>
         </div>
     </div>
     <script src="calculator.js">
