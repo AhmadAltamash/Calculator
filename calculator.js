@@ -66,6 +66,7 @@ dark.addEventListener("click", function() {
     if(dark.checked)
     {
         document.body.style.backgroundColor = "black";
+document.getElementsByClassName(".container") = body.style.backgroundColor = "grey";
     }
     else
     {
