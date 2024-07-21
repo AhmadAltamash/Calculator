@@ -7,7 +7,7 @@ html,body{
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
     color: black;
-    background-color: rgb(255, 255, 255);
+    background: #dde1e7;
     display: flex;
     justify-content: center;
     align-items: center;
