@@ -70,6 +70,6 @@ document.getElementsByClassName(".container") = body.style.backgroundColor = "gr
     }
     else
     {
-        document.body.style.backgroundColor = "white";
+        document.body.style.background = "#dde1e7";
     }
 })
